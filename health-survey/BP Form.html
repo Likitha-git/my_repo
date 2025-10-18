@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-4 text-center text-gray-800">Know your Blood Pressure.</h2>
+
+  <div class="mb-4">
+    <label for="systolic" class="block text-sm font-medium text-gray-700">Systolic (mm Hg)</label>
+    <input type="number" id="systolic" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+  </div>
+
+  <div class="mb-4">
+    <label for="diastolic" class="block text-sm font-medium text-gray-700">Diastolic (mm Hg)</label>
+    <input type="number" id="diastolic" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+  </div>
+
+  <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Save</button>
+
+<form action="next.html" class="flex justify-end mt-6">
+  <button type="submit" class="mt-6 w-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">
+    Next Page
+  </button>
+</form>
+
+  </body>

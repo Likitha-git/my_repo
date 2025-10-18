@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Bar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- 🔍 Search Bar -->
+  <div class="max-w-3xl mx-auto mt-10 px-4">
+    <form action="#" method="GET" class="flex flex-col sm:flex-row gap-4">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search by name, Aadhaar, or relation"
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+
+  <!-- 📋 Static Results Table -->
+  <div class="max-w-4xl mx-auto mt-10 px-4">
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow">
+        <thead class="bg-gray-200 text-gray-700">
+          <tr>
+            <th class="px-4 py-2 text-left">Name</th>
+            <th class="px-4 py-2 text-left">Aadhaar</th>
+            <th class="px-4 py-2 text-left">Relation</th>
+            <th class="px-4 py-2 text-left">Mobile</th>
+            <th class="px-4 py-2 text-left">Village</th>
+            <th class="px-4 py-2 text-left">Profile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t hover:bg-gray-50">
+            <td class="px-4 py-2">Ravi Kumar</td>
+            <td class="px-4 py-2">123456789012</td>
+            <td class="px-4 py-2">Mahesh Kumar</td>
+            <td class="px-4 py-2">9876543210</td>
+            <td class="px-4 py-2">Rampur</td>
+            <td class="px-4 py-2">
+        <a href="/profile/ravi-kumar" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+          </tr>
+          <tr class="border-t hover:bg-gray-50">
+            <td class="px-4 py-2">Anita Sharma</td>
+            <td class="px-4 py-2">987654321098</td>
+            <td class="px-4 py-2">Rajesh Sharma</td>
+            <td class="px-4 py-2">9123456780</td>
+            <td class="px-4 py-2">Lakhnau</td>
+            <td class="px-4 py-2">
+        <a href="/profile/anita-sharma" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+          </tr>
+            <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Sunil Verma</td>
+        <td class="px-4 py-2">456789123456</td>
+        <td class="px-4 py-2">Ramesh Verma</td>
+        <td class="px-4 py-2">9988776655</td>
+        <td class="px-4 py-2">Meerut</td>
+        <td class="px-4 py-2">
+        <a href="/profile/sunil-verma" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Priya Mehta</td>
+        <td class="px-4 py-2">321654987012</td>
+        <td class="px-4 py-2">Suresh Mehta</td>
+        <td class="px-4 py-2">9001122334</td>
+        <td class="px-4 py-2">Kanpur</td>
+        <td class="px-4 py-2">
+        <a href="/profile/priya-mehta" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Amit Joshi</td>
+        <td class="px-4 py-2">789456123789</td>
+        <td class="px-4 py-2">Dinesh Joshi</td>
+        <td class="px-4 py-2">9012345678</td>
+        <td class="px-4 py-2">Agra</td>
+        <td class="px-4 py-2">
+        <a href="/profile/amit-joshi" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Neha Singh</td>
+        <td class="px-4 py-2">654321789654</td>
+        <td class="px-4 py-2">Manoj Singh</td>
+        <td class="px-4 py-2">9090909090</td>
+        <td class="px-4 py-2">Varanasi</td>
+        <td class="px-4 py-2">
+        <a href="/profile/neha-singh" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Karan Patel</td>
+        <td class="px-4 py-2">852963741258</td>
+        <td class="px-4 py-2">Ramesh Patel</td>
+        <td class="px-4 py-2">8888888888</td>
+        <td class="px-4 py-2">Surat</td>
+        <td class="px-4 py-2">
+        <a href="/profile/karan-patel" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Meena Kumari</td>
+        <td class="px-4 py-2">963852741963</td>
+        <td class="px-4 py-2">Rajendra Kumari</td>
+        <td class="px-4 py-2">7777777777</td>
+        <td class="px-4 py-2">Patna</td>
+        <td class="px-4 py-2">
+        <a href="/profile/meena-kumari" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Vikas Yadav</td>
+        <td class="px-4 py-2">741852963741</td>
+        <td class="px-4 py-2">Harish Yadav</td>
+        <td class="px-4 py-2">6666666666</td>
+        <td class="px-4 py-2">Gorakhpur</td>
+        <td class="px-4 py-2">
+        <a href="/profile/vikas-yadav" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Sneha Reddy</td>
+        <td class="px-4 py-2">159357258456</td>
+        <td class="px-4 py-2">Anil Reddy</td>
+        <td class="px-4 py-2">9999999999</td>
+        <td class="px-4 py-2">Hyderabad</td>
+        <td class="px-4 py-2">
+        <a href="/profile/sneha-reddy" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Deepak Chauhan</td>
+        <td class="px-4 py-2">258963147852</td>
+        <td class="px-4 py-2">Ravi Chauhan</td>
+        <td class="px-4 py-2">9123456789</td>
+        <td class="px-4 py-2">Aligarh</td>
+        <td class="px-4 py-2">
+        <a href="/profile/deepak-chauhan" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Pooja Thakur</td>
+        <td class="px-4 py-2">753951456852</td>
+        <td class="px-4 py-2">Sandeep Thakur</td>
+        <td class="px-4 py-2">9345678123</td>
+        <td class="px-4 py-2">Shimla</td>
+        <td class="px-4 py-2">
+        <a href="/profile/pooja-thakur" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Raj Malhotra</td>
+        <td class="px-4 py-2">951753852456</td>
+        <td class="px-4 py-2">Prem Malhotra</td>
+        <td class="px-4 py-2">9456123789</td>
+        <td class="px-4 py-2">Delhi</td><td class="px-4 py-2">
+        <a href="/profile/raj-malhotra" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Geeta Nair</td>
+        <td class="px-4 py-2">852456963741</td>
+        <td class="px-4 py-2">Ramesh Nair</td>
+        <td class="px-4 py-2">9876541230</td>
+        <td class="px-4 py-2">Kochi</td>
+        <td class="px-4 py-2">
+        <a href="/profile/geeta-nair" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Mohit Jain</td>
+        <td class="px-4 py-2">741963852741</td>
+        <td class="px-4 py-2">Suresh Jain</td>
+        <td class="px-4 py-2">9012345670</td>
+        <td class="px-4 py-2">Indore</td>
+        <td class="px-4 py-2">
+        <a href="/profile/mohit-jain" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+      <tr class="border-t hover:bg-gray-50">
+        <td class="px-4 py-2">Ritika Das</td>
+        <td class="px-4 py-2">369258147258</td>
+        <td class="px-4 py-2">Ajay Das</td>
+        <td class="px-4 py-2">9345612789</td>
+        <td class="px-4 py-2">Kolkata</td>
+        <td class="px-4 py-2">
+        <a href="/profile/ritika-das" class="text-blue-600 hover:underline">View Profile</a>
+      </td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

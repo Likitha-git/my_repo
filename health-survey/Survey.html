@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    
+    <div class="max-w-sm mx-auto mt-10 bg-white p-6 rounded-ig ">
+    <h2 class="text-2xl font-medium text-center text-gray-800 mb-6">New Resident</h2>
+<form action="#" method="POST" class="space-y-4">
+  <!-- Name -->
+   <div>
+  <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+  <input
+    type="text"
+    placeholder="Enter your Fullname"
+    id="name"
+    name="name"
+    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+    required
+  />
+  <p class="mt-2 text-sm text-red-500">Name is required and must be at least 2 characters.</p>
+</div>
+  <!--Father Name-->
+  <div>
+      <label for="name" class="block text-sm font-medium text-gray-700">Father/Husband Name*</label>
+      <input type="text" id="name" placeholder="Enter Father/Husband name" name="name" required
+             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+  </div>
+  <!--Age-->
+  <div>
+  <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
+  <input
+    type="number"
+    id="age"
+    name="age"
+    placeholder="Enter your age"
+    min="1"
+    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+    required
+  />
+  <p class="mt-2 text-sm text-red-500">You must be at least 18 years old.</p>
+</div>
+  <!--Aadhar number-->
+  <div>
+  <label for="aadhaar" class="block text-sm font-medium text-gray-700">Aadhaar Number</label>
+  <input
+    type="text"
+    id="aadhaar"
+    placeholder="0000 0000 0000"
+    name="aadhaar"
+    maxlength="12"
+    pattern="\d{12}"
+    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+    required
+  />
+  <p class="mt-2 text-sm text-red-500">Aadhaar number must be exactly 12 digits.</p>
+  <!--Mobile Number-->
+  <div>
+  <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+  <input
+    type="tel"
+    id="mobile"
+    name="mobile"
+    pattern="\d{10}"
+    placeholder="00000 00000"
+    maxlength="10"
+    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+    required
+  />
+  <p class="mt-2 text-sm text-red-500">Mobile number must be exactly 10 digits.</p>
+</div>
+  <!--Village-->
+  <div>
+      <label for="village" class="block text-sm font-medium text-gray-700">Village*</label>
+      <input type="text" id="village" name="village" placeholder="Enter your village name" required
+             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" /> 
+  </div>
+  <!--Pincode-->
+  <label class="block text-gray-700 text-sm font-medium mb-2">
+  Pincode*
+</label>
+<input
+  type="text"
+  placeholder="Enter your Pincode{Ex:560056}"
+  maxlength="6"
+  pattern="\d{6}"
+  class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+/>
+<p class="mt-2 text-sm text-red-500">Mobile number must be exactly 10 digits.</p>
+
+             <!-- Has Diabities-->
+              <div class="flex flex-col space-y-2">
+  <label class="text-sm font-medium text-gray-700">Do you have diabetes?</label>
+  <div class="flex space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="diabetes" value="yes" class="form-radio text-blue-600" />
+      <span>Yes</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="diabetes" value="no" checked class="form-radio text-blue-600" />
+      <span>No</span>
+    </label>
+  </div>
+<!--Bp-->
+             <div class="flex flex-col space-y-2">
+  <label class="text-sm font-medium text-gray-700">Do you have BP?</label>
+  <div class="flex space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="bp" value="yes" class="form-radio text-blue-600" />
+      <span>Yes</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="bp" value="no" checked class="form-radio text-blue-600" />
+      <span>No</span>
+    </label>
+  </div>
+<!--Gender-->
+              <div class="flex flex-col space-y-2">
+  <label class="text-sm font-medium text-gray-700">Gender</label>
+  <div class="flex space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="gender" value="male" checked class="form-radio text-blue-600" />
+      <span>Male</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="gender" value="female" class="form-radio text-pink-600" />
+      <span>Female</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="gender" value="other" class="form-radio text-gray-600" />
+      <span>Other</span>
+    </label>
+  </div>
+<!--On medication-->
+              
+               <div class="flex flex-col space-y-2">
+  <label class="text-sm font-medium text-gray-700">Are you on medication?</label>
+  <div class="flex space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="Medication" value="yes" class="form-radio text-blue-600" />
+      <span>Yes</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="Medication" value="no" checked class="form-radio text-blue-600" />
+      <span>No</span>
+    </label>
+  </div>
+  <!-- Submit Button -->
+  <button
+  type="submit"
+  class="mt-8 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+>
+  Save
+</button>
+</form>
+  </body>
+</html>
